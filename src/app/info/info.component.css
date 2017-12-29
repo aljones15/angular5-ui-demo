@@ -26,6 +26,12 @@
   align-items: center;
 }
 
+.large-icon:hover {
+  -webkit-animation: hoverText 5s forwards infinite;
+  -moz-animation: hoverText 5s forwards infinite;
+  -o-animation: hoverText 5s forwards infinite;
+  animation: hoverText 5s forwards infinite; 
+}
 .left {
   float: left;
 }
@@ -35,15 +41,63 @@
 }
 
 .circle {
-  display: inline-flex;
+  display: flex;
+  flex: 1 1 150px;
   border-radius: 50%;
-  width: 10rem;
-  height: 10rem;
+  width: 150px;
+  height: 150px;
+  min-width: 150px;
+  min-height: 150px;
+  max-width: 150px;
+  max-height: 150px;
   font-size: 2rem;
   background-color: rgba(200,200,200,0.5);
   color: white;
   margin-right: 2rem;
   margin-left: 2rem;
+  margin-bottom: 1rem;
   align-items: center; 
   justify-content: center;
+}
+
+.circle:hover {
+  -webkit-animation: hoverColor 250ms forwards;
+  -moz-animation: hoverColor 250ms forwards;
+  -o-animation: hoverColor 250ms forwards;
+  animation: hoverColor 250ms forwards; 
+}
+
+ @keyframes hoverColor {
+   0%{background-color: rgba(200,200,200,0.5)}
+   20%{background-color: rgba(180,180,180,0.55)}
+   40%{background-color: rgba(160,160,160,0.60)}
+   60%{background-color: rgba(140,140,140,0.70)}
+   80%{background-color: rgba(120,120,120,0.80)}
+   100%{background-color: rgba(100,100,100,0.90)}
+}
+
+.circle:not(:hover) {
+  -webkit-animation: notHoverColor 250ms forwards;
+  -moz-animation: notHoverColor 250ms forwards;
+  -o-animation: notHoverColor 250ms forwards;
+  animation: notHoverColor 250ms forwards; 
+}
+
+ @keyframes notHoverColor {
+   0%{background-color: rgba(100,100,100,0.9)}
+   20%{background-color: rgba(120,120,120,0.8)}
+   40%{background-color: rgba(140,140,140,0.70)}
+   60%{background-color: rgba(160,160,160,0.60)}
+   80%{background-color: rgba(180,180,180,0.55)}
+   100%{background-color: rgba(200,200,200,0.5)}
+}
+
+mat-card-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.circle-holder {
+  display: flex;
+  overflow: auto;
 }

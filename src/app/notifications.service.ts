@@ -16,7 +16,6 @@ export class NotificationsService {
     fetchUsers.getUsers(10).subscribe(this.processUsers.bind(this));
   }
   processUsers(req) {
-    console.log(req);
     this.users = req.results;
     this._notices = this.users.map(user => new Notice(user.email, user.picture.thumbnail));
     this.notices.next(this._notices);

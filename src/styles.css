@@ -37,4 +37,24 @@ body {
   margin: 2rem;
 }
 
+.highlight {
+  cursor: default;
+}
 
+.highlight:hover {
+  animation: highlightFont 250ms forwards;
+}
+
+.highlight:not(:hover) {
+  animation: notHighlightFont 250ms forwards;
+}
+
+@keyframes highlightFont {
+  from { color: rgba(0,0,0, 1); }
+  to { color: rgba(0,0,0,0.5); }
+}
+
+@keyframes notHighlightFont {
+  from { color: rgba(0,0,0,0.5); }
+  to { color: rgba(0,0,0, 1); }
+}
