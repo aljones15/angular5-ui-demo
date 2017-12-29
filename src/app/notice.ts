@@ -1,11 +1,13 @@
 export class Notice {
-  userName: string;
-  message: string;
-  profileUrl: string;
-  genRandom(many: number) {
-    return Math.floor(Math.random() * many));
+  public userName: string;
+  public message: string;
+  public profileUrl: string;
+  public favorites: number;
+  public comments: number;
+  public genRandom(many: number) {
+    return Math.floor(Math.random() * many);
   }
-  genRandomMessage(): string {
+  private genRandomMessage(): string {
     const m = this.genRandom(5);
     switch(m) {
       case 0 :

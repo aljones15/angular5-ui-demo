@@ -5,13 +5,21 @@
     <mat-card-subtitle>Find the right customers</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content class='flex-space-evenly'>
-    <mat-icon class='large-icon flex-1'>keyboard_arrow_left</mat-icon>
-    <span class='flex-3 flex-space-evenly'>
+    <mat-icon 
+      class='large-icon flex-1 highlight'
+      (mousedown)='scrollLeft(true)' 
+      (mouseup)='scrollLeft(false)'
+    >keyboard_arrow_left</mat-icon>
+    <span id='js-scroll-box' class='flex-3 flex-space-evenly'>
       <span class='circle'>5</span>
       <span class='circle'>$90k</span>
       <span class='circle'>2%</span>
       <span class='circle'>100</span>
     </span>
-    <mat-icon class='large-icon flex-1'>keyboard_arrow_right</mat-icon>
+    <mat-icon
+      class='large-icon flex-1 highlight'
+      (mousedown)='scrollRight(true)'
+      (mouseup)='scrollRight(false)'
+    >keyboard_arrow_right</mat-icon>
   </mat-card-content>
 </mat-card>

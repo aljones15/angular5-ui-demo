@@ -13,6 +13,10 @@
   line-height: 1rem;
 }
 
+mat-card {
+  min-width: 555px;
+}
+
 .mat-card-title h1 {
   letter-spacing: 0.5px;
 }
@@ -20,7 +24,7 @@
 .large-icon {
   display: inline-flex;
   font-size: 5rem;
-  color: rgba(200,200,200,0.5);
+  color: rgba(150,150,150,0.8);
   height: 10rem;
   justify-content: center;
   align-items: center;
@@ -44,17 +48,17 @@
   display: flex;
   flex: 1 1 150px;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  min-width: 150px;
-  min-height: 150px;
-  max-width: 150px;
-  max-height: 150px;
+  width: 125px;
+  height: 125px;
+  min-width: 125px;
+  min-height: 125px;
+  max-width: 125px;
+  max-height: 125px;
   font-size: 2rem;
   background-color: rgba(200,200,200,0.5);
   color: white;
-  margin-right: 2rem;
-  margin-left: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
   margin-bottom: 1rem;
   align-items: center; 
   justify-content: center;
@@ -105,5 +109,9 @@ mat-card-content {
 .flex-space-evenly {
   display: flex;
   justify-content: space-evenly;
-  overflow: auto;
+  overflow: hidden;
+}
+
+#js-scroll-box {
+  justify-content: baseline;
 }
