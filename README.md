@@ -1,4 +1,4 @@
-[lastest screen shot](https://github.com/aljones15/angular5-ui-demo/raw/master/latest.png)
+![lastest screen shot](https://github.com/aljones15/angular5-ui-demo/raw/master/latest.png)
 
 # Example
 
