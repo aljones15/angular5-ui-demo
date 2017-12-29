@@ -5,6 +5,7 @@
 
 mat-list-item {
   border-top: 1px outset grey;
+  padding-top: 5px;
 }
 
 .text-end {

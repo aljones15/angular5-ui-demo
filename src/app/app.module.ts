@@ -11,6 +11,7 @@ import { NotificationsService } from './notifications.service';
 import { SessionService } from './session.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FetchUserService } from './fetch-user.service';
+import { MapService } from './map.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { FetchUserService } from './fetch-user.service';
     MaterialModule,
     HttpClientModule
   ],
-  providers: [NotificationsService, SessionService, FetchUserService],
+  providers: [NotificationsService, SessionService, FetchUserService, MapService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

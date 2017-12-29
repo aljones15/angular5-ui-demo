@@ -1,3 +1,5 @@
 <mat-card id='#map_app' class='main-panel'>
-  <img mat-card-image src='https://wallpapercave.com/wp/MbXUy9y.jpg' />
+  <img [hidden]="!maps.loading"  mat-card-image src='https://i.imgur.com/TZcL7Cc.gif' />
+  <div id='gmap'></div>
+  <button (click)="maps.deleteAllMarkers()">Delete All Markers</button>
 </mat-card>

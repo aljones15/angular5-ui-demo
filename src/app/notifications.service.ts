@@ -7,7 +7,7 @@ import { FetchUserService } from './fetch-user.service';
 export class NotificationsService {
 
   private _notices: Notice[];
-  public notices;
+  public notices:BehaviorSubject<Notice[]>;
   public users;
 
   constructor(private fetchUsers: FetchUserService) {
@@ -19,5 +19,12 @@ export class NotificationsService {
     this.users = req.results;
     this._notices = this.users.map(user => new Notice(user.email, user.picture.thumbnail));
     this.notices.next(this._notices);
+  }
+  addNotice(email, thumbnail, message) {
+    const notice = new Notice(email, thumbnail);
+    notice.message = message;
+    this._notices.push(notice);
+    this.notices.next(this._notices);
+    return notice;
   }
 }

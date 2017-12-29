@@ -1,9 +1,4 @@
 <mat-card id='notification_menu' class='main-panel'>
-       <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item>Item 1</button>
-        <button mat-menu-item>Item 2</button>
-      </mat-menu>
 <mat-list>
   <mat-list-item *ngFor="let notice of notices">
    <img matListAvatar src="{{notice.profileUrl}}" alt="{{notice.userName}}">
