@@ -1,0 +1,21 @@
+<mat-toolbar id='nav_bar_tools' class='bg-white'>
+  <mat-toolbar-row>
+  <span id='nav_bar_left' class='flex-half'>
+    Logo
+  </span>
+  <span id='nav_bar_right' class='flex-half'>
+    <mat-icon class='flex-1'>language</mat-icon>
+    <mat-icon class='flex-1'>share</mat-icon>
+    <mat-icon class='flex-1'>person</mat-icon>
+    <mat-icon class='flex-1'>done</mat-icon>
+    <mat-form-field id='nav_bar_search_form' class='flex-3'>
+      <mat-icon matPrefix>search</mat-icon>
+      <input id='nav_bar_search_input' matInput placeholder="Search">
+    </mat-form-field>
+    <span class='flex-1'>
+      <img mat-card-avatar src="{{profileUrl}}" alt="you">
+    </span>
+  </span>
+  </mat-toolbar-row>
+</mat-toolbar>
+

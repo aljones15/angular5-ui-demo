@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.bg-white {
+  background-color: white;
+}
+
+html, app-root, app-main, body {
+  background-color: rgba(255,255,255,0.5);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.flex-1 {
+  flex: 1 1 10%;
+}
+
+.flex-2 {
+  flex: 2 2 20%;
+}
+
+.flex-3 {
+  flex: 3 3 30%;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.main-panel {
+  margin: 2rem;
+}

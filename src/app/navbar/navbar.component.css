@@ -1,0 +1,25 @@
+.flex-half {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+}
+
+.flex-1 {
+  display: flex;
+  flex: 1 1 1rem;
+}
+
+.flex-3 {
+  display: flex;
+  flex: 3 3;
+  flex-direction: row;
+}
+
+#nav_bar_right {
+  vertical-align: center;
+}
+
+.mat-icon {
+  align-self: center;
+}

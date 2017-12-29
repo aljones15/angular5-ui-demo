@@ -1,0 +1,49 @@
+.logo-container {
+  background-image: url('https://image.freepik.com/free-vector/blue-brain-background_1035-2666.jpg');
+  width: 200px;
+  height: 200px;
+  max-height: 200px;
+  max-width: 200px;
+  background-size: cover;
+}
+
+.mat-card-title {
+  font-size: 2rem;
+  border-bottom: 1px outset grey;
+  line-height: 1rem;
+}
+
+.mat-card-title h1 {
+  letter-spacing: 0.5px;
+}
+
+.large-icon {
+  display: inline-flex;
+  font-size: 5rem;
+  color: rgba(200,200,200,0.5);
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.circle {
+  display: inline-flex;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  font-size: 2rem;
+  background-color: rgba(200,200,200,0.5);
+  color: white;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  align-items: center; 
+  justify-content: center;
+}
