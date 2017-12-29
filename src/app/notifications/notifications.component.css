@@ -10,3 +10,7 @@ mat-list-item {
 .text-end {
   text-align: end;
 }
+
+p {
+  line-height: 3rem;
+}

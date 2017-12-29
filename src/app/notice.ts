@@ -2,8 +2,11 @@ export class Notice {
   userName: string;
   message: string;
   profileUrl: string;
+  genRandom(many: number): number {
+    return Math.floor(Math.random() * many));
+  }
   genRandomMessage(): string {
-    const m = Math.floor(Math.random() * 5));
+    const m = this.genRandom(5);
     switch(m) {
       case 0 :
         return ' shared a link';
@@ -18,9 +21,6 @@ export class Notice {
       default:
         return ' endorsed a comment';
     }
-  }
-  genRandom(many: number): number {
-    return Math.floor(Math.random() * many));
   }
   constructor(userName: string, profileUrl: string) {
    this.userName = userName;

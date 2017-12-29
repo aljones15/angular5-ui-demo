@@ -29,9 +29,12 @@ body {
 }
 
 .flex-column {
+  display: inline-flex;
   flex-direction: column;
 }
 
 .main-panel {
   margin: 2rem;
 }
+
+

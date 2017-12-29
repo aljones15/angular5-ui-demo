@@ -21,7 +21,7 @@ header {
 }
 
 article {
-  display: flex;
+  display: inline-flex;
   flex-grow: 1;
   flex-shrink: 1;
   flex-direction: row;
@@ -29,7 +29,21 @@ article {
 }
 
 app-navbar {
-  display: flex;
+  display: inline-flex;
   flex-grow: 1;
   flex-shrink: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  article {
+    display: inline-flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  article {
+    display: inline-flex;
+    flex-direction: row;
+  }
 }
