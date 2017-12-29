@@ -101,3 +101,9 @@ mat-card-content {
   display: flex;
   overflow: auto;
 }
+
+.flex-space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: auto;
+}

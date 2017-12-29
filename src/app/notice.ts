@@ -2,7 +2,7 @@ export class Notice {
   userName: string;
   message: string;
   profileUrl: string;
-  genRandom(many: number): number {
+  genRandom(many: number) {
     return Math.floor(Math.random() * many));
   }
   genRandomMessage(): string {
