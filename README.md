@@ -1,3 +1,5 @@
+[lastest screen shot](https://github.com/aljones15/angular5-ui-demo/raw/master/latest.png)
+
 # Example
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.2.
