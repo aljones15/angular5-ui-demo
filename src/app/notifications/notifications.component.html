@@ -1,5 +1,13 @@
 <mat-card id='notification_menu' class='main-panel'>
 <mat-list>
+  <mat-list-item>
+   <img matListAvatar src="{{user.picture.thumbnail}}" alt="{{user.email}}">
+   <p class='flex-1' matLine>
+     <mat-form-field class="new_post">
+       <input matInput placeholder="New post..." (keypress)="newPost($event)" [(ngModel)]="message" />
+     </mat-form-field>
+   </p>
+  </mat-list-item>
   <mat-list-item *ngFor="let notice of notices">
    <img matListAvatar src="{{notice.profileUrl}}" alt="{{notice.userName}}">
     <p matLine>

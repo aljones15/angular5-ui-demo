@@ -4,6 +4,7 @@ export class Notice {
   public profileUrl: string;
   public favorites: number;
   public comments: number;
+  public created;
   public genRandom(many: number) {
     return Math.floor(Math.random() * many);
   }
@@ -30,5 +31,6 @@ export class Notice {
    this.message = this.genRandomMessage();
    this.favorites = this.genRandom(10);
    this.comments = this.genRandom(5);
+   this.created = Date.now();
   }
 }

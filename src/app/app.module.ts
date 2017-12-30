@@ -12,6 +12,7 @@ import { SessionService } from './session.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FetchUserService } from './fetch-user.service';
 import { MapService } from './map.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MapService } from './map.service';
   imports: [
     BrowserModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [NotificationsService, SessionService, FetchUserService, MapService ],
   bootstrap: [AppComponent]
