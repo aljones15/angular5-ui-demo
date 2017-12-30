@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
 
 @Component({
   selector: 'app-info',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoComponent implements OnInit {
   private scroller;
-  constructor() {
+  constructor(public dialog: MatDialog) {
   }
 
   ngOnInit() {
@@ -34,4 +35,24 @@ export class InfoComponent implements OnInit {
       this.scroller = setInterval(this.scrollIt, 25, -5);
     }
   }
+  openModal(): void {
+    const options = {width: '250px'};
+    let nodalRef = this.dialog.open(LogoPopUp, options);
+  }
+}
+
+@Component({
+  selector: 'logo-pop-up',
+  templateUrl: './logo-pop-up.html',
+  styleUrls: ['./logo-pop-up.css']
+
+})
+
+export class LogoPopUp {
+  constructor(public modalRef: MatDialogRef<LogoPopUp>) {
+
+  }
+  onNoClick() {
+    this.modalRef.close();
+  } 
 }

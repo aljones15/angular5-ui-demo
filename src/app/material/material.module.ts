@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatButtonModule } from '@angular/material';
+import { MatButtonModule, MatDialogModule } from '@angular/material';
 import {MatMenuModule} from '@angular/material/menu';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
@@ -17,7 +17,8 @@ const modules = [
   MatInputModule,
   MatListModule,
   MatCardModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatDialogModule
 ];
 
 @NgModule({
