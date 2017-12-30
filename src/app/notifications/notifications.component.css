@@ -4,7 +4,7 @@
 }
 
 mat-list-item {
-  border-top: 1px outset grey;
+  border-top: 1px outset #f7f4f4;
   padding-top: 5px;
 }
 

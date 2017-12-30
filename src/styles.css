@@ -58,3 +58,21 @@ body {
   from { color: rgba(0,0,0,0.5); }
   to { color: rgba(0,0,0, 1); }
 }
+
+mat-card.mat-card {
+  border-radius: 10px;
+}
+
+div.mat-form-field-flex {
+  padding-top: 5px;
+  align-items: flex-end;
+}
+
+.mat-form-field-can-float.mat-form-field-should-float {
+  color: rgba(100,100,100,0.5);
+}
+
+.mat-form-field-can-float.mat-form-field-should-float label.mat-form-field-label {
+  color: rgba(100,100,100,0.5);
+  transform: translateY(-0.5em) scale(.75) perspective(100px) translateZ(.001px);
+}
