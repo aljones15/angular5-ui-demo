@@ -1,0 +1,54 @@
+<div id='pop-up'>
+  <p>
+    <mat-radio-button value='1'><b>Build your purpose statement</b></mat-radio-button>
+  </p>
+  <p>
+  <mat-form-field>
+    <mat-select placeholder="Solve">
+      <mat-option *ngFor="let purpose of purposes" [value]="purpose">
+        {{ purpose }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput value="Enter your Cause">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="Accross">
+      <mat-option *ngFor="let direction of directions" [value]="direction">
+        {{ direction }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput value="Enter your Scope">
+  </mat-form-field>
+  </p>
+  <p>
+  <mat-form-field>
+    <mat-select placeholder="By">
+      <mat-option *ngFor="let way of ways" [value]="way">
+        {{ way }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput value="Enter your VISION">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="By">
+      <mat-option *ngFor="let way of ways" [value]="way">
+        {{ way }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput value="Enter your MISSION">
+  </mat-form-field>
+  </p>
+  <p></p>
+  <p>
+    <mat-radio-button value='true'><b>Write your purpose statement</b></mat-radio-button>
+  </p>
+
+</div>

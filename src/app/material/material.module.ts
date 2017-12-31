@@ -8,6 +8,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatSelectModule} from '@angular/material/select';
 
 const modules = [
   MatButtonModule,
@@ -18,7 +20,9 @@ const modules = [
   MatListModule,
   MatCardModule,
   MatToolbarModule,
-  MatDialogModule
+  MatDialogModule,
+  MatRadioModule,
+  MatSelectModule
 ];
 
 @NgModule({

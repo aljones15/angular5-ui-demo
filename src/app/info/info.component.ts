@@ -36,7 +36,7 @@ export class InfoComponent implements OnInit {
     }
   }
   openModal(): void {
-    const options = {width: '250px'};
+    const options = {width: '60%'};
     let nodalRef = this.dialog.open(LogoPopUp, options);
   }
 }
@@ -49,6 +49,9 @@ export class InfoComponent implements OnInit {
 })
 
 export class LogoPopUp {
+  public directions = ['Across', 'In', 'Around'];
+  public purposes = ['Solve', 'Improve', 'Fix', 'Increase', 'Decrease', 'Progress'];
+  public ways = ['By', 'Through', 'From', 'With'];
   constructor(public modalRef: MatDialogRef<LogoPopUp>) {
 
   }
