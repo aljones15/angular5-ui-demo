@@ -1,8 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+.font-arvo {
+  font-family: 'Arvo', serif;
+}
+
+.font-nunito {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Arvo', serif;
+  font-size: '24pt';
+  color: #595959;
+}
+
 .bg-white {
   background-color: white;
+}
+
+.spirit-orange {
+  color: #FFAA00;
+}
+
+.mind-blue {
+  color: #407FAE;
+}
+
+.heart-red {
+  color: #FC7165;
+}
+
+.body-green {
+  color: #46B3B3;
+}
+
+.light-gray {
+  color: #F2F2F2;
+}
+
+.medium-gray {
+  color: #E2E2E2;
+}
+
+.deep-gray {
+  color: #595959;
+}
+
+.bg-spirit-orange {
+  background-color: #FFAA00;
+}
+
+.bg-mind-blue {
+  background-color: #407FAE;
+}
+
+.bg-heart-red {
+  background-color: #FC7165;
+}
+
+.bg-body-green {
+  background-color: #46B3B3;
+}
+
+.bg-light-gray {
+  background-color: #F2F2F2;
+}
+
+.bg-medium-gray {
+  background-color: #E2E2E2;
+}
+
+.bg-deep-gray {
+  background-color: #595959;
 }
 
 html, app-root, app-main, body {
