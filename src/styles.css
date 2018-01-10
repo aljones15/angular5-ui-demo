@@ -1,12 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
-.font-arvo {
-  font-family: 'Arvo', serif;
-}
-
-.font-nunito {
-  font-family: 'Nunito Sans', sans-serif;
+@font-face {
+  font-family: 'Arvo';
+  src: url('../fonts/Arvo/Arvo-Regular.ttf');
+  src: url('../fonts/Arvo/Arvo-Bold.ttf'), url('../fonts/Arvo/Arvo-Italic.ttf'), url('../fonts/Arvo/Arvo-BoldItalic.ttf');
 }
 
 h1 {
