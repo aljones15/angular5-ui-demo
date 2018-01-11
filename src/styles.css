@@ -121,11 +121,11 @@ body {
 }
 
 .highlight:hover {
-  animation: highlightFont 250ms forwards;
+  animation: notHighlightFont 250ms forwards;
 }
 
 .highlight:not(:hover) {
-  animation: notHighlightFont 250ms forwards;
+  animation: highlightFont 250ms forwards;
 }
 
 @keyframes highlightFont {

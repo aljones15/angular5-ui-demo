@@ -1,14 +1,26 @@
 <mat-toolbar id='nav_bar_tools' class='bg-white'>
   <mat-toolbar-row>
-  <span id='nav_bar_left' class='flex-half'>
+  <span id='nav_bar_left' class='flex-half flex-shrink'>
     Logo
   </span>
   <span id='nav_bar_right' class='flex-half'>
-    <mat-icon class='flex-1 center highlight'>language</mat-icon>
-    <mat-icon class='flex-1 center highlight'>share</mat-icon>
-    <mat-icon class='flex-1 center highlight'>person</mat-icon>
-    <mat-icon class='flex-1 center highlight'>done</mat-icon>
-    <mat-form-field id='nav_bar_search_form' class='flex-3 center'>
+    <a href='javascript:void(0)' class='flex-1 flex-column font-small center highlight'>
+      <mat-icon class='flex-1 center highlight'>language</mat-icon>
+      <span class='flex-1 center highlight'>Name</span>
+    </a>
+    <a href='javascript:void(0)' class='flex-1 flex-column font-small center highlight'>
+      <mat-icon class='flex-1 center highlight'>share</mat-icon>
+      <span class='flex-1 center highlight'>Name</span>
+    </a>
+    <a href='javascript:void(0)' class='flex-1 flex-column font-small center highlight'>
+      <mat-icon class='flex-1 center highlight'>person</mat-icon>
+      <span class='flex-1 center highlight'>Name</span>
+    </a>
+    <a href='javascript:void(0)' class='flex-1 flex-column font-small center highlight'>
+      <mat-icon class='flex-1 center highlight'>done</mat-icon>
+      <span class='flex-1 center highlight'>Name</span>
+    </a>
+    <mat-form-field id='nav_bar_search_form' class='flex-3 flex-shrink center'>
       <mat-icon matPrefix class='flex-ender'>search</mat-icon>
       <input id='nav_bar_search_input' matInput placeholder="Search">
     </mat-form-field>

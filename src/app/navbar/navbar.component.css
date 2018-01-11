@@ -28,4 +28,18 @@
   align-self: center;
 }
 
+.flex-column {
+  flex-direction: column;
+} 
 
+.font-small {
+  font-size: 0.5rem;
+}
+
+a, span {
+  text-decoration: none;
+}
+
+.flex-shrink {
+  flex-shrink: 3;
+}
