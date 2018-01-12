@@ -53,7 +53,9 @@ export class MapService {
     const houston = {lat: 29.7604, lng: -95.3698};
     this.map = new this.client.maps.Map(document.getElementById('gmap'), {
       zoom: 4,
-      center: houston
+      center: houston,
+      disableDefaultUI: true,
+      mapTypeControl: false
     });
     this.client.maps.event.addListener(this.map, 'click', this.addMarker.bind(this));
   }
