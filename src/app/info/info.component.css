@@ -1,7 +1,7 @@
 .logo-container {
   background-image: url('./logo.gif');
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   max-height: 200px;
   max-width: 200px;
   background-size: cover;
@@ -10,12 +10,13 @@
 
 .mat-card-title {
   font-size: 2rem;
-  border-bottom: 1px outset grey;
+  border-bottom: 1px solid #F2F2F2;
   line-height: 1rem;
 }
 
 mat-card {
   min-width: 555px;
+  padding: 5px;
 }
 
 .mat-card-title h1 {
@@ -47,14 +48,14 @@ mat-card {
 
 .circle {
   display: flex;
-  flex: 1 1 150px;
+  flex: 1 1 100px;
   border-radius: 50%;
-  width: 125px;
-  height: 125px;
-  min-width: 125px;
-  min-height: 125px;
-  max-width: 125px;
-  max-height: 125px;
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
   font-size: 2rem;
   background-color: rgba(200,200,200,0.5);
   color: white;
@@ -115,4 +116,8 @@ mat-card-content {
 
 #js-scroll-box {
   justify-content: baseline;
+}
+
+.mat-card-header-text {
+  width: 100%;
 }

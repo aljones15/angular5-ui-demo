@@ -25,7 +25,7 @@ h1 {
 }
 
 .bg-white {
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 .spirit-orange {
@@ -140,6 +140,7 @@ body {
 
 mat-card.mat-card {
   border-radius: 10px;
+  background-color: #FFFFFF;
 }
 
 div.mat-form-field-flex {
@@ -154,4 +155,8 @@ div.mat-form-field-flex {
 .mat-form-field-can-float.mat-form-field-should-float label.mat-form-field-label {
   color: rgba(100,100,100,0.5);
   transform: translateY(-0.5em) scale(.75) perspective(100px) translateZ(.001px);
+}
+
+.text-left {
+  text-align: left;
 }

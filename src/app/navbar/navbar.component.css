@@ -43,3 +43,12 @@ a, span {
 .flex-shrink {
   flex-shrink: 3;
 }
+
+.mat-toolbar {
+  opacity: 0.65;
+}
+
+.mat-toolbar .mat-icon {
+  min-width: 20px;
+  min-height: 20px;
+}
