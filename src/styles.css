@@ -104,7 +104,7 @@ body {
 }
 
 .flex-3 {
-  flex: 3 3 30%;
+  flex: 3 1 30%;
 }
 
 .flex-column {
