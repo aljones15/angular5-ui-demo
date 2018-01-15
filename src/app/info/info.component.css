@@ -51,7 +51,9 @@ mat-card {
 }
 
 .circle-container {
-  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .circle-title {
   font-family: 'Arvo';
