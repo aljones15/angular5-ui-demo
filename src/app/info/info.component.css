@@ -50,6 +50,9 @@ mat-card {
   min-width: 150px;
 }
 
+.circle-container {
+  padding-left: 20px;
+}
 .circle-title {
   font-family: 'Arvo';
   font-weight: bold;
