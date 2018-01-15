@@ -146,6 +146,7 @@ mat-card.mat-card {
 div.mat-form-field-flex {
   padding-top: 5px;
   align-items: flex-end;
+  white-space: normal;
 }
 
 .mat-form-field-can-float.mat-form-field-should-float {
@@ -159,4 +160,20 @@ div.mat-form-field-flex {
 
 .text-left {
   text-align: left;
+}
+
+mat-list div.mat-form-field-underline, mat-list div.mat-input-underline {
+  display: none;
+}
+
+
+app-notifications div.mat-input-infix,app-notifications div.mat-form-field-infix {
+  background-color: #F2F2F2;
+  white-space: normal;
+  border-radius: 15px;
+}
+
+app-notifications .new_post label {
+  padding-left: 15px;
+  top: 1.0em;
 }

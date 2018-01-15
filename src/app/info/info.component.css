@@ -6,6 +6,7 @@
   max-width: 200px;
   background-size: cover;
   filter: blur(2px);
+  margin-left: 1%;
 }
 
 .mat-card-title {

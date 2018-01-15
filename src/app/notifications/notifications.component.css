@@ -6,11 +6,13 @@
 mat-list {
   max-height: 800px;
   overflow: auto;
+  white-space: normal;
 }
 
 mat-list-item {
   border-top: 1px outset #f7f4f4;
   padding-top: 5px;
+  white-space: normal;
 }
 
 .text-end {
@@ -28,3 +30,10 @@ mat-icon {
 .new_post {
   width: 80%;
 }
+
+
+input {
+  white-space: normal;
+}
+
+
